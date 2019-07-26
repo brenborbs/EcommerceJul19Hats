@@ -9,4 +9,13 @@ App features:
 - After lesson 8
 - Set up Google firebase
 
+2nd commit:
+
+- Added google firebase authentication
+
+3rd commit:
+
+- Created Sign up component
+- Completed sign in and sign out with email and password
+
 To start the app, "yarn start"

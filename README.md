@@ -18,4 +18,9 @@ App features:
 - Created Sign up component
 - Completed sign in and sign out with email and password
 
+4th commit:
+
+- Added Redux and Redux store
+- Redirect after sign-in
+
 To start the app, "yarn start"

@@ -23,4 +23,11 @@ App features:
 - Added Redux and Redux store
 - Redirect after sign-in
 
+5th commit:
+
+- Added cartIcon and cartDropwdown
+- Added cart-reducer
+
+6th commit:
+
 To start the app, "yarn start"

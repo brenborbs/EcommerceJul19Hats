@@ -28,6 +28,10 @@ App features:
 - Added cartIcon and cartDropwdown
 - Added cart-reducer
 
-6th commit:
+Important Notes for rest of commits:
+
+- update app with reselect , replaced cart selectors with memoized
+- added checkout item component
+- added additem and remove item functionality to checkout component
 
 To start the app, "yarn start"

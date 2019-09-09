@@ -13,8 +13,8 @@
     background-position: center;
     margin-bottom: 5px;
   }
-
-  .custom-button {
+  // The style is breaking as the button no longer has custom-button css class tag. So the parent element of the button, collection-item, is not able to apply the css properties defined in collection-item.styles.scss for the custom-button. To fix the issue, one easy way would be to just rename .custom-button  to button  in the collection-item.styles.scss
+  button {
     width: 80%;
     opacity: 0.7;
     position: absolute;
@@ -26,7 +26,8 @@
     .image {
       opacity: 0.8;
     }
-    .custom-button {
+    // The style is breaking as the button no longer has custom-button css class tag. So the parent element of the button, collection-item, is not able to apply the css properties defined in collection-item.styles.scss for the custom-button. To fix the issue, one easy way would be to just rename .custom-button  to button  in the collection-item.styles.scss
+    button {
       opacity: 0.85;
       display: flex;
     }

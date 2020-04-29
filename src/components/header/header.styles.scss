@@ -1,26 +1,98 @@
-.header {
-  height: 70px;
-  width: 100%;
+// .header {
+//   height: 70px;
+//   width: 100%;
+//   display: flex;
+//   justify-content: space-between;
+//   margin-bottom: 25px;
+
+//   .logo-container {
+//     height: 100%;
+//     width: 70px;
+//     padding: 25px;
+//   }
+
+//   .options {
+//     width: 50%;
+//     height: 100%;
+//     display: flex;
+//     align-items: center;
+//     justify-content: flex-end;
+
+//     .option {
+//       padding: 10px 15px;
+//       cursor: pointer;
+//     }
+//   }
+// }
+.theme-bg {
+  background: rgb(244, 67, 68);
+}
+.header-top {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 25px;
+  padding: 20px 0px 0px;
 
-  .logo-container {
-    height: 100%;
-    width: 70px;
-    padding: 25px;
+  .header-info > span {
+    color: #e8e8e8;
   }
-
-  .options {
-    width: 50%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-
-    .option {
-      padding: 10px 15px;
-      cursor: pointer;
+  .header-info > span a {
+    color: #e8e8e8;
+    &:hover {
+      color: #fff;
     }
+  }
+  .book-login-register > ul {
+    display: flex;
+  }
+  .book-login-register ul li {
+    margin-left: 30px;
+    &:first-child {
+      margin-left: 0px;
+    }
+  }
+  .book-login-register a {
+    color: #e8e8e8;
+    text-transform: capitalize;
+    &:hover {
+      color: #fff;
+    }
+  }
+  .book-login-register a i {
+    margin-right: 5px;
+    position: relative;
+  }
+}
+.header-bottom {
+  height: 60px;
+}
+.header-bottom-wrapper {
+  display: flex;
+  justify-content: space-between;
+  .ptb-40 {
+    padding: 10px 0px;
+  }
+  .menu-style-2 {
+    align-items: center;
+    display: flex;
+  }
+  .menu-style-2 nav > ul > li {
+    display: inline-block;
+    margin: 0 16px;
+    position: relative;
+  }
+  .menu-style-2.book-menu nav > ul > li {
+    margin: 0 30px;
+  }
+  .menu-style-2 nav > ul > li > a {
+    color: #383838;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 20px 0px;
+    text-transform: capitalize;
+  }
+  .header-cart-2 {
+    position: relative;
+    padding: 10px 0px;
   }
 }

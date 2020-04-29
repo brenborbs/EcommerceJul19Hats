@@ -1,0 +1,33 @@
+.breadcrumb-area {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../../assets/clothes.jpg);
+  background-attachment: fixed;
+  background-position: (25% 75%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 50vh;
+}
+.pt-205 {
+  padding-bottom: 110px;
+}
+.pb-210 {
+  padding-top: 105px;
+}
+.breadcrumb-content h1 {
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  text-transform: capitalize;
+}
+.breadcrumb-content li {
+  color: #fff;
+  display: inline-block;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.breadcrumb-content li a {
+  color: #fff;
+  position: relative;
+  padding-right: 18px;
+}

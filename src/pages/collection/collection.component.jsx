@@ -11,18 +11,22 @@ const CollectionPage = ({ collection }) => {
   const { title, items } = collection;
   return (
     <div className="collection-page">
-      <h2 className="title">{title}</h2>
-      <div className="items">
-        {items.map(item => (
-          <CollectionItem key={item.id} item={item} />
-        ))}
+      <div className="container-fluid">
+        <div className="section-title-3 text-center mb-40">
+          <h2>{title.toUpperCase()}</h2>
+        </div>
+        <div className="items">
+          {items.map((item) => (
+            <CollectionItem key={item.id} item={item} />
+          ))}
+        </div>
       </div>
     </div>
   );
 };
 
 const mapStateToProps = (state, ownProps) => ({
-  collection: selectCollection(ownProps.match.params.collectionId)(state)
+  collection: selectCollection(ownProps.match.params.collectionId)(state),
 });
 
 export default connect(mapStateToProps)(CollectionPage);

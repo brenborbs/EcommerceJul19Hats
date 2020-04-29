@@ -1,0 +1,44 @@
+.slider-container .slider-banner {
+  min-height: 90vh;
+  position: relative;
+  background-size: cover !important;
+  background-position: center !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin-bottom: 80px;
+}
+.slider-text {
+  background: #82828287;
+  font-size: 70px;
+  font-weight: 700;
+  color: #ffffff;
+  padding: 0px 20px;
+  text-transform: uppercase;
+  display: table;
+}
+.slider-underline {
+  margin: 10px 0px;
+  color: white;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 300;
+}
+
+.sliderbutton-container {
+  text-align: center;
+  margin-top: 28px;
+  .slider-button {
+    background-color: #f44344;
+    color: white;
+    padding: 12px;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    &:hover {
+      background-color: white;
+      color: black;
+    }
+  }
+}

@@ -1,52 +1,181 @@
-.collection-item {
-  width: 22vw;
-  display: flex;
-  flex-direction: column;
-  height: 350px;
-  align-items: center;
+// .collection-item {
+//   width: 22vw;
+//   display: flex;
+//   flex-direction: column;
+//   height: 350px;
+//   align-items: center;
+//   position: relative;
+
+//   .image {
+//     width: 100%;
+//     height: 95%;
+//     background-size: cover;
+//     background-position: center;
+//     margin-bottom: 5px;
+//   }
+//   // The style is breaking as the button no longer has custom-button css class tag. So the parent element of the button, collection-item, is not able to apply the css properties defined in collection-item.styles.scss for the custom-button. To fix the issue, one easy way would be to just rename .custom-button  to button  in the collection-item.styles.scss
+//   button {
+//     width: 80%;
+//     opacity: 0.7;
+//     position: absolute;
+//     top: 255px;
+//     display: none;
+//   }
+
+//   &:hover {
+//     .image {
+//       opacity: 0.8;
+//     }
+//     // The style is breaking as the button no longer has custom-button css class tag. So the parent element of the button, collection-item, is not able to apply the css properties defined in collection-item.styles.scss for the custom-button. To fix the issue, one easy way would be to just rename .custom-button  to button  in the collection-item.styles.scss
+//     button {
+//       opacity: 0.85;
+//       display: flex;
+//     }
+//   }
+
+//   .collection-footer {
+//     width: 100%;
+//     height: 5%;
+//     display: flex;
+//     justify-content: space-between;
+//     font-size: 18px;
+
+//     .name {
+//       width: 90%;
+//       margin-bottom: 15px;
+//     }
+
+//     .price {
+//       width: 10%;
+//     }
+//   }
+// }
+
+.custom-col-5 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+}
+
+.image {
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+}
+.product-img-2,
+.new-top-img {
   position: relative;
-
-  .image {
+}
+.product-img-2::before,
+.new-top-img::before {
+  background-color: rgba(0, 0, 0, 0.6);
+  bottom: 0;
+  content: "";
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: scaleX(0);
+  transform-origin: 0 0 0;
+  transition: transform 0.4s cubic-bezier(0.77, 0, 0.175, 1) 0s,
+    opacity 0s ease 0.4s;
+}
+.product-wrapper:hover .product-img-2::before,
+.new-top-wrapper:hover .new-top-img::before {
+  transform: scaleX(1);
+  opacity: 1;
+  transition: transform 0.4s cubic-bezier(0.77, 0, 0.175, 1) 0s,
+    opacity 0s ease 0s;
+}
+.product-img-2 {
+  img {
     width: 100%;
-    height: 95%;
-    background-size: cover;
-    background-position: center;
-    margin-bottom: 5px;
   }
-  // The style is breaking as the button no longer has custom-button css class tag. So the parent element of the button, collection-item, is not able to apply the css properties defined in collection-item.styles.scss for the custom-button. To fix the issue, one easy way would be to just rename .custom-button  to button  in the collection-item.styles.scss
+}
+.product-action-2 {
+  bottom: 0;
+  display: inline-block;
+  left: 0;
+  opacity: 1;
+  padding: 60px 26px;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  transition: all 0.3s ease 0s;
+  z-index: 999;
+  transform: scaleX(0);
+  opacity: 0;
+  transform-origin: 0 0 0;
+  transition: transform 0.3s cubic-bezier(0.77, 0, 0.175, 1) 0s,
+    opacity 0s ease 0.3s;
   button {
-    width: 80%;
-    opacity: 0.7;
-    position: absolute;
-    top: 255px;
-    display: none;
+    &.add-style-2 {
+      background-color: #fff;
+      border-radius: 50px;
+      color: #383838;
+      display: inline-block;
+      font-size: 14px;
+      font-weight: bold;
+      line-height: 1;
+      margin: 0 8px;
+      padding: 10px 20px 12px;
+      i {
+        font-size: 18px;
+        margin-left: 15px;
+        position: relative;
+        top: 2px;
+      }
+    }
+    &.wishlist-style-2 {
+      background-color: #fff;
+      border-radius: 100%;
+      color: #383838;
+      display: inline-block;
+      font-size: 18px;
+      height: 40px;
+      line-height: 45px;
+      margin: 0 8px;
+      width: 40px;
+      bottom: -2px;
+      position: relative;
+    }
   }
-
+}
+.product-action-2 button.add-style-2:hover,
+.product-action-2 button.wishlist-style-2:hover {
+  background-color: #f44344;
+  color: #f1f1f1;
+}
+.product-wrapper {
   &:hover {
-    .image {
-      opacity: 0.8;
-    }
-    // The style is breaking as the button no longer has custom-button css class tag. So the parent element of the button, collection-item, is not able to apply the css properties defined in collection-item.styles.scss for the custom-button. To fix the issue, one easy way would be to just rename .custom-button  to button  in the collection-item.styles.scss
-    button {
-      opacity: 0.85;
-      display: flex;
+    .product-action-2 {
+      transform: scaleX(1);
+      opacity: 1;
+      transition: transform 0.4s cubic-bezier(0.77, 0, 0.175, 1) 0s,
+        opacity 0s ease 0s;
     }
   }
-
-  .collection-footer {
+}
+.writer-wrapper {
+  & > img {
     width: 100%;
-    height: 5%;
-    display: flex;
-    justify-content: space-between;
+  }
+}
+.product-content-2 {
+  padding-top: 26px;
+  & > h4 {
+    color: #383838;
     font-size: 18px;
-
-    .name {
-      width: 90%;
-      margin-bottom: 15px;
-    }
-
-    .price {
-      width: 10%;
-    }
+    font-weight: bold;
+    margin-bottom: 13px;
+  }
+  & > span {
+    color: #383838;
+    display: block;
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
   }
 }

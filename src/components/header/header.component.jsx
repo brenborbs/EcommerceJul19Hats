@@ -46,7 +46,7 @@ const Header = ({ currentUser, hidden }) => (
           <div className="header-info">
             <span>
               Contact us - 00 221 225 123-30 or
-              <Link to="/">info@domain.com</Link>
+              <Link to="/"> admin@hatsclothing.com</Link>
             </span>
           </div>
           <div className="book-login-register">

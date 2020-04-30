@@ -25,7 +25,7 @@
 //   }
 // }
 .theme-bg {
-  background: rgb(244, 67, 68);
+  background: #00bed4cc;
 }
 .header-top {
   display: flex;
@@ -33,10 +33,10 @@
   padding: 20px 0px 0px;
 
   .header-info > span {
-    color: #e8e8e8;
+    color: black;
   }
   .header-info > span a {
-    color: #e8e8e8;
+    color: black;
     &:hover {
       color: #fff;
     }
@@ -51,7 +51,7 @@
     }
   }
   .book-login-register a {
-    color: #e8e8e8;
+    color: black;
     text-transform: capitalize;
     &:hover {
       color: #fff;
